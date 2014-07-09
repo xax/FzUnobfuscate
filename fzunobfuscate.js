@@ -1,13 +1,14 @@
 'use strict';
+
 var util = require('util');
 var Q = require('q');
 var fs = require('fs');
 var path = require('path');
 var xml2js = require('xml2js');
+var sprintf = require('sprintf-js').sprintf;
 
 
 var fzXORKey = "FILEZILLA1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
 
 
 function parseFileToJSON (filename) {
@@ -53,8 +54,7 @@ function deobfuscateFZPassword (pass) {
 
 
 function showItem (host, user, pass, name) {
-	if (name) name = ' ' + name;
-	console.log('  %s %s %s', host, user, pass, name || '');
+	console.log(sprintf('  %-28s %-23s %-15s' + (name? ' %-9s': ''), host, user, pass, name));
 }
 
 
