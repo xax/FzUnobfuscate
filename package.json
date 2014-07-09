@@ -1,0 +1,21 @@
+{
+  "name": "FzUnobfuscate",
+  "version": "0.0.0",
+  "description": "Unobfuscate passwords from earlier versions of FileZilla",
+  "main": "fzunobfuscate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "filezilla",
+    "decrypt",
+    "unobuscate",
+    "hack"
+  ],
+  "author": "XA",
+  "license": "All rights reserved.",
+  "dependencies": {
+    "q": "^1.0.1",
+    "xml2js": "^0.4.4"
+  }
+}
