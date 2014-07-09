@@ -1,6 +1,6 @@
 {
   "name": "FzUnobfuscate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Unobfuscate passwords from earlier versions of FileZilla",
   "main": "fzunobfuscate.js",
   "scripts": {
@@ -9,13 +9,18 @@
   "keywords": [
     "filezilla",
     "decrypt",
-    "unobuscate",
+    "deobfuscate",
+    "unobfuscate",
     "hack"
   ],
   "author": "XA",
-  "license": "All rights reserved.",
+  "license": "GPL-3.0+",
   "dependencies": {
     "q": "^1.0.1",
     "xml2js": "^0.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xax/FzUnobfuscate.git"
   }
 }
